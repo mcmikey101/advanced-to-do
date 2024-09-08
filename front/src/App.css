@@ -1,0 +1,29 @@
+.main {
+  margin-top: 10%;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.form{
+  display: grid;
+  place-items: center;
+}
+.formContainer {
+  width: 15em;
+  height: 20em;
+  padding: 0.5em;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  background-color: rgb(127, 153, 223);
+}
+input {
+  background-color: white;
+  height: 2.5em;
+  width: max-content;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 0.5em;
+}

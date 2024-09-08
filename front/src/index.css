@@ -1,0 +1,97 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #524c8f;
+}
+.navbar {
+  width: 100%;
+  height: 4em;
+  background-color: #7c74d1;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+button {
+  margin-top: 0.25em;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 12vmax;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.elbtn {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background-color: rgb(133, 133, 218);
+  display: grid;
+  place-items: center;
+  padding: 0;
+  margin: 0;
+}
+.home {
+  color: white;
+  font-size: 4em;
+}
+.item {
+  color: white;
+  font-size: 1em;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 1vw;
+  width: 1fr;
+  margin-bottom: 1vh;
+  margin-right: 1vw;
+}
+.homecont {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+}
+.inputs {
+  display: grid;
+  place-items: center;
+  width: 80vw; 
+  word-break: break-all;
+}
+
+.navbarname {
+  background-color: rgb(43, 105, 240);
+  border-radius: 10px;
+  padding: 0 3em 0 3em;
+  font-size: 1em;
+  color: white;
+}
+.warning {
+  font-size: 2em;
+  color: white;
+}
+#elinput {
+  margin-top: 2.2vh;
+}
+
+.logmsg {
+  margin-top: 1vh;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+}
+.notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

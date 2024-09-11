@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-  
+const crypto = require('crypto')
 function SignForm(props) {
   if (props.loggedin == true) {
     return (

@@ -10,7 +10,7 @@ const connection = sql.createConnection({
     password: 'luvsic19-2000DOOMSdays',
     database: 'users'
 })
-//test text commit
+//pull check thing
 app.use(cors())
 app.use(express.json())
 

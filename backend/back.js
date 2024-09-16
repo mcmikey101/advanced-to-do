@@ -10,7 +10,7 @@ const connection = sql.createConnection({
     password: '*****',
     database: '*****'
 })
-
+//pull check thing
 app.use(cors())
 app.use(express.json())
 

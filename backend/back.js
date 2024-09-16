@@ -7,8 +7,8 @@ const cors = require('cors')
 const connection = sql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'luvsic19-2000DOOMSdays',
-    database: 'users'
+    password: '*****',
+    database: '*****'
 })
 
 app.use(cors())
@@ -85,6 +85,13 @@ app.post('/', (req, res) => {
             res.send({'msg': 'Item deleted'})
         })
     }
+})
+app.post('/addItem', (req, res) => {
+    let tablename = req.body.login
+    connection.query('INSERT INTO ?? (id, items) VALUES (?, ?)', [tablename, req.body.id, req.body.item], (err, result) => {
+        if (err) throw err
+        res.send({'msg': 'Item added'})
+    })
 })
 app.listen(3000, () => {
     console.log('Sup')

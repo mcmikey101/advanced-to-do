@@ -65,7 +65,7 @@ function HomePage(props) {
     
     async function addItem() {
         if (props.login) {
-            const req = await fetch('http://localhost:3000', {
+            const req = await fetch('http://localhost:3000/addItem', {
                 method: 'POST',
                 body: JSON.stringify({login: props.login, type: 'addItem', item: inputItem, id: String(Date.now())}),
                 headers: {

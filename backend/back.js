@@ -7,7 +7,7 @@ const cors = require('cors')
 const connection = sql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'luvsic19-2000DOOMSdays',
+    password: '',
     database: 'users'
 })
 //pull check thing

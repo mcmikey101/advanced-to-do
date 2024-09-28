@@ -29,9 +29,9 @@ function SignIn(props) {
   })
   
   async function putData() {
-    const req = await fetch('http://localhost:3000', {
+    const req = await fetch('http://localhost:3000/reg', {
       method: 'POST',
-      body: JSON.stringify({login: login, password: password, type: 'reg'}),
+      body: JSON.stringify({login: login, password: password}),
       headers: {
         'Content-Type': 'application/json'
       }
@@ -40,9 +40,9 @@ function SignIn(props) {
     setLogMsg(data.msg)
   }
   async function checkDB() {
-    const response = await fetch('http://localhost:3000', {
+    const response = await fetch('http://localhost:3000/signin', {
       method: 'POST',
-      body: JSON.stringify({login: login, password: password, type: 'signin'}),
+      body: JSON.stringify({login: login, password: password}),
       headers: {
         'Content-Type': 'application/json'
       }
